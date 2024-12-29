@@ -1,0 +1,250 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+body{
+    background-color: black;
+}
+
+.slider{
+    position: relative;
+}
+
+ .city-nav {
+    position: absolute;
+    z-index: 1;
+    margin-top: 107px;
+    margin-left: 626.45px;
+    display: flex;
+    gap: 60.5px;
+    width: 814px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.slider-wrapp{
+    overflow: hidden;
+    background-color: #131313;
+}
+
+.content-wrapper{
+    display: flex;
+    background-color: #131313;
+    width: 1440px;
+    height: 783px; 
+}
+
+.content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+
+.nav-elem {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.elem-act {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    height: 100%;
+    padding-bottom: 4px;
+}
+
+.slidersshow {
+    transition: transform 0.5s ease;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.links-item a:hover{
+    border-color: #E3B873;
+    color: #E3B873;
+}
+
+.line {
+    margin-left: 160px;
+    margin-top: -35px;
+}
+.title2{
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding-top: 176.36px;
+    width: 153px;
+}
+.p2 {
+    width: 442px;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding-top: 40px;
+    padding-bottom: 42px;
+}
+
+.slider-group{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.p-city{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    vertical-align: initial;
+    height: 76px;
+    
+}
+
+.slider-group-info{
+    width: 380px;
+}
+
+
+.slider-group-info td{
+    width: 190px;
+}
+
+.captions {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.text-info{
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    vertical-align: initial;
+    height: 76px;
+}
+
+.slider-group2{
+    display: flex;
+    flex-direction: row;
+    gap: 78px;
+}
+
+
+.slider-arrows{
+    margin-top: 79px;
+}
+
+.content-left{
+    display: flex;
+    flex-direction: column;
+    padding-left: 134.45px;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    background-color: #131313;
+    padding-top: 107px;
+    padding-left: 50px;
+}
+
+.img-wrapper{
+    padding-top: 45px;
+    padding-bottom: 92px;
+}
+
+
+/* кнопки */
+
+.slider-indictrs{
+    position: absolute;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    margin-top: 623px;
+    margin-left: 203px;
+    list-style: none;
+    z-index: 3;
+}
+
+.slider-indictr{
+    flex: 0 1 auto;
+    width: 9.57px;
+    height: 9.57px;
+    border-radius: 30px;
+    margin-right: 17.54px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.indicator-active{
+    background-color: #FFFFFF;
+}
+
+.move{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #131313;
+    z-index: 3;
+}
+
+.move-prev{
+    margin-left: 135.45px;
+     margin-top: 620px;
+}
+
+.move-next{
+    margin-left: 299.67px;
+    margin-top: 620px;
+}
+
+.move::before{
+    content: "";  
+    width: 41.46px;
+    height: 13.28px;
+    background-color: #131313;
+    border: 1px solid #131313;
+}
+
+.move-prev::before{
+    background-image: url(../PJ-04/images/prevarr.svg);
+    background-repeat: no-repeat;
+}
+
+.move-next::before{
+    background-image: url(../PJ-04/images/nextarr.svg);
+    background-repeat: no-repeat;
+}
