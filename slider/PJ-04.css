@@ -240,11 +240,11 @@ body{
 }
 
 .move-prev::before{
-    background-image: url(../PJ-04/images/prevarr.svg);
+    background-image: url(image/prevarr.svg);
     background-repeat: no-repeat;
 }
 
 .move-next::before{
-    background-image: url(../PJ-04/images/nextarr.svg);
+    background-image: url(image/nextarr.svg);
     background-repeat: no-repeat;
 }
